@@ -2,25 +2,22 @@
 
 ## Golang
 
-1. Declare empty string array
 
-```Stack := []string{ }```
-
-2. Need to a list of items on which contains check needed 
+1. Need to a list of items on which contains check needed 
 
 Declare map
 
 ```Operators := map[string]bool{ "+": true, "-": true, "*": true, "/": true}```
 
-3. Declare empty slice
+2. Declare empty slice
 ```
 mySlice1 := make([]int, 0)
 mySlice2 := []int{}
 ```
-4. Atoi - ASCII to integer
+3. Atoi - ASCII to integer
 
 
-5. Convert string to integer
+4. Convert string to integer
 
  
 
@@ -33,7 +30,7 @@ i, err := strconv.Atoi("-42")
 s := strconv.Itoa(-42)
 ```
 
-6. append to slice
+5. append to slice
 
 ```
 s = make([]string, 3)
