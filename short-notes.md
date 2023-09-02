@@ -17,5 +17,15 @@ Declare map
 mySlice1 := make([]int, 0)
 mySlice2 := []int{}
 ```
+4. Atoi - ASCII to integer
+5. Convert string to integer 
 
+strconv implements conversions
+```
+//string to int
+i, err := strconv.Atoi("-42")
+
+//Int to string
+s := strconv.Itoa(-42)
+```
 
