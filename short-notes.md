@@ -18,6 +18,8 @@ mySlice1 := make([]int, 0)
 mySlice2 := []int{}
 ```
 4. Atoi - ASCII to integer
+
+
 5. Convert string to integer 
 
 strconv implements conversions
