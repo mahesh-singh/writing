@@ -20,7 +20,9 @@ mySlice2 := []int{}
 4. Atoi - ASCII to integer
 
 
-5. Convert string to integer 
+5. Convert string to integer
+
+ 
 
 strconv implements conversions
 ```
@@ -31,3 +33,13 @@ i, err := strconv.Atoi("-42")
 s := strconv.Itoa(-42)
 ```
 
+6. append to slice
+
+```
+s = make([]string, 3)
+s[0] = "a"
+s[1] = "b"
+s[2] = "c"
+s = append(s, "d")
+s = append(s, "e", "f")
+```
