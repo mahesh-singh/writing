@@ -40,3 +40,11 @@ s[2] = "c"
 s = append(s, "d")
 s = append(s, "e", "f")
 ```
+6. Pass a slice as a parameter to a function, and have that function modify the original slice
+  
+pass a slice as a parameter to a function, and have that function modify the original slice, then you have to pass a pointer to the slice:
+```
+func myAppend(list *[]string, value string) {
+    *list = append(*list, value)
+}
+```
