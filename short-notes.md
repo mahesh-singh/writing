@@ -44,6 +44,14 @@ s = append(s, "e", "f")
   
 pass a slice as a parameter to a function, and have that function modify the original slice, then you have to pass a pointer to the slice:
 ```
+```
+# Others
+
+1. OLAP: Online analytical processing
+2. OLTP: Online transaction processing
+3. OLAP vs OLTP: Example: retail company with many store at differet location. Processing real time orders are OLTP. Later analysing the data will be done via OLAP.
+4. 
+
 func myAppend(list *[]string, value string) {
     *list = append(*list, value)
 }
