@@ -33,3 +33,5 @@
 >Self test: Try to solve with multiple solution
 
 >Achivement require secrifice
+
+> Don't trust your memory. Write stuff down. Have a spedific time to review it. Use calendar, alarm and reminders. DO NOT RELY ON MEMORY - outsource it!!
