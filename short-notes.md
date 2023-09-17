@@ -42,17 +42,53 @@ s = append(s, "e", "f")
 ```
 6. Pass a slice as a parameter to a function, and have that function modify the original slice
   
-pass a slice as a parameter to a function, and have that function modify the original slice, then you have to pass a pointer to the slice:
+Function to modify the original slice, then need to pass a pointer to the slice as  a parameter to a function:
 ```
+func myAppend(list *[]string, value string) {
+    *list = append(*list, value)
+}
 ```
+
+7. Method receiver - value recevier & pointer recevier
+
+```
+type MyStruch struc {
+ Value int
+}
+
+// value receiver
+func(m MyStruct)PrintMe() {
+ 
+}
+
+//pointer revevier
+func(m *MyStruct)PrintMe() {
+}
+
+```
+
+8. Slice: Hold the ref to array (pointer)
+9. Type assertion: apply to interface value x.(t) where x is interface expression and T is type
+10. Derefrencing pointer: Give us access to the value that pointer point to. * is also used to “dereference” pointer variables. Dereferencing a pointer gives us access to the value the pointer points to.
+11. & address operator, * retrive value stored at address
+12. 
+```
+x :=1
+p = &x
+fmt.Println(*p) // 1
+*p = 2 // sets a x = 2
+
+```
+13. Slice where each element is a array of size 2
+
+```
+pairs  = [][2]int
+```
+
+14. 
 # Others
 
 1. OLAP: Online analytical processing
 2. OLTP: Online transaction processing
 3. OLAP vs OLTP: Example: retail company with many store at differet location. Processing real time orders are OLTP. Later analysing the data will be done via OLAP.
-4. 
 
-func myAppend(list *[]string, value string) {
-    *list = append(*list, value)
-}
-```
