@@ -85,7 +85,24 @@ fmt.Println(*p) // 1
 pairs  = [][2]int
 ```
 
-14. 
+14. Access Characters of String in Go
+
+  create and initialize a string
+  
+  `name := "Programiz"`
+
+  access first character
+  
+  `fmt.Printf("%c\n", name[0])  // P`
+
+  access fourth character
+  
+  `fmt.Printf("%c\n", name[3])  // g`
+
+  access last character
+  
+  `fmt.Printf("%c", name[8])  // z`
+
 # Others
 
 1. OLAP: Online analytical processing
