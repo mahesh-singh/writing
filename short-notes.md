@@ -109,6 +109,15 @@ pairs  = [][2]int
 strings.TrimSpace(s)
 ```
 
+16. For loop on map
+
+```
+for k, v := range m { 
+    fmt.Printf("key[%s] value[%s]\n", k, v)
+
+}
+```
+
 # Others
 
 1. OLAP: Online analytical processing
