@@ -103,6 +103,12 @@ pairs  = [][2]int
   
   `fmt.Printf("%c", name[8])  // z`
 
+ 15. Trim spaces
+
+```
+strings.TrimSpace(s)
+```
+
 # Others
 
 1. OLAP: Online analytical processing
