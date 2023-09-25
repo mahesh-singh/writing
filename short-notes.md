@@ -118,6 +118,17 @@ for k, v := range m {
 }
 ```
 
+
+# Docker
+
+### Pull the image from one repo, tag it and push it to the new registry.
+
+```
+docker pull old-registry/app:some_tag
+docker tag old-registry/app:some_tag new-registry/app:some_tag
+docker push new-registry/app:some_tag
+```
+
 # Others
 
 1. OLAP: Online analytical processing
