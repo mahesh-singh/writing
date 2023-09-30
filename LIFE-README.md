@@ -37,3 +37,6 @@
 >Achivement require secrifice
 
 > Don't trust your memory. Write stuff down. Have a spedific time to review it. Use calendar, alarm and reminders. DO NOT RELY ON MEMORY - outsource it!!
+
+> “Today is difficult, tomorrow is much more difficult, but the day after tomorrow is beautiful.
+Most people die tomorrow evening”  — Jack Ma.
