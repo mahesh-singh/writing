@@ -3,21 +3,21 @@
 ## Golang
 
 
-1. Need to a list of items on which contains check needed 
+ ### Need to a list of items on which contains check needed 
 
 Declare map
 
 ```Operators := map[string]bool{ "+": true, "-": true, "*": true, "/": true}```
 
-2. Declare empty slice
+### Declare empty slice
 ```
 mySlice1 := make([]int, 0)
 mySlice2 := []int{}
 ```
-3. Atoi - ASCII to integer
+### Atoi - ASCII to integer
 
 
-4. Convert string to integer
+### Convert string to integer
 
  
 
@@ -30,7 +30,7 @@ i, err := strconv.Atoi("-42")
 s := strconv.Itoa(-42)
 ```
 
-5. append to slice
+### append to slice
 
 ```
 s = make([]string, 3)
@@ -40,7 +40,7 @@ s[2] = "c"
 s = append(s, "d")
 s = append(s, "e", "f")
 ```
-6. Pass a slice as a parameter to a function, and have that function modify the original slice
+### Pass a slice as a parameter to a function, and have that function modify the original slice
   
 Function to modify the original slice, then need to pass a pointer to the slice as  a parameter to a function:
 ```
@@ -49,7 +49,7 @@ func myAppend(list *[]string, value string) {
 }
 ```
 
-7. Method receiver - value recevier & pointer recevier
+### Method receiver - value recevier & pointer recevier
 
 ```
 type MyStruch struc {
@@ -67,19 +67,50 @@ func(m *MyStruct)PrintMe() {
 
 ```
 
-8. Slice: Hold the ref to array (pointer)
-9. Type assertion: apply to interface value x.(t) where x is interface expression and T is type
-10. Derefrencing pointer: Give us access to the value that pointer point to. * is also used to “dereference” pointer variables. Dereferencing a pointer gives us access to the value the pointer points to.
-11. & address operator, * retrive value stored at address
-12. 
+### Slice: Hold the ref to array (pointer)
+
+### Type assertion: apply to interface value x.(t) where x is interface expression and T is type
+
+### Derefrencing pointer: Give us access to the value that pointer point to. * is also used to “dereference” pointer variables. Dereferencing a pointer gives us access to the value the pointer points to.
+
+
+### pointer (*) and address-of operator (&)
+
+A pointer is a variable that stores the memory address of another variable.
 ```
-x :=1
-p = &x
-fmt.Println(*p) // 1
-*p = 2 // sets a x = 2
+var ptr *int // Declares a pointer to an integer
+```
+
+To assign the address of a variable to a pointer, you use the address-of operator & 
+```
+x := 42
+ptr = &x // Assigns the address of 'x' to 'ptr'
+```
+
+To access the value stored at the memory address pointed to by a pointer, you can use the dereference operator *:
+```
+fmt.Println(*ptr) // Prints the value stored at the memory address 'ptr' points to (in this case, 42)
+```
+
+Use & to get the memory address of a variable and assign it to a pointer
 
 ```
-13. Slice where each element is a array of size 2
+x := 42
+ptr := &x // 'ptr' now contains the memory address of 'x'
+```
+
+Use & in function calls to pass variables by reference, allowing functions to modify the original values
+
+```
+func modifyValue(v *int) {
+    *v = *v * 2
+}
+
+x := 10
+modifyValue(&x) // Passes 'x' by reference, so 'x' will be modified to 20
+```
+
+### Slice where each element is a array of size 2
 
 ```
 pairs  = [][2]int
