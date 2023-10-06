@@ -1,3 +1,5 @@
+>You don't need to feel good to get going. You need to get going to feel good.
+
 >There is no silver bullet.
 
 >Target on behaviour at a time.
