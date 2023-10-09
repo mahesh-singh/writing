@@ -2,7 +2,7 @@
 
 >There is no silver bullet.
 
->Target on behaviour at a time.
+>Target one behaviour at a time.
 
 >In a year from now, you will regret not having started today.
 
