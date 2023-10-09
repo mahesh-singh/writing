@@ -71,7 +71,7 @@ func(m *MyStruct)PrintMe() {
 
 ### Type assertion: apply to interface value x.(t) where x is interface expression and T is type
 
-### Derefrencing pointer: Give us access to the value that pointer point to. * is also used to “dereference” pointer variables. Dereferencing a pointer gives us access to the value the pointer points to.
+
 
 
 ### pointer (*) and address-of operator (&)
@@ -90,6 +90,8 @@ ptr = &x // Assigns the address of 'x' to 'ptr'
 To access the value stored at the memory address pointed to by a pointer, you can use the dereference operator *:
 ```
 fmt.Println(*ptr) // Prints the value stored at the memory address 'ptr' points to (in this case, 42)
+
+Derefrencing pointer: Give us access to the value that pointer point to. * is used to “dereference” pointer variables. 
 ```
 
 Use & to get the memory address of a variable and assign it to a pointer
