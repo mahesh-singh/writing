@@ -9,17 +9,21 @@ Declare map
 
 ```Operators := map[string]bool{ "+": true, "-": true, "*": true, "/": true}```
 
+-----
+
 ### Declare empty slice
 ```
 mySlice1 := make([]int, 0)
 mySlice2 := []int{}
 ```
+----
+
 ### Atoi - ASCII to integer
 
-
+----
 ### Convert string to integer
 
- 
+-----
 
 strconv implements conversions
 ```
@@ -30,6 +34,7 @@ i, err := strconv.Atoi("-42")
 s := strconv.Itoa(-42)
 ```
 
+-----
 ### append to slice
 
 ```
@@ -40,6 +45,7 @@ s[2] = "c"
 s = append(s, "d")
 s = append(s, "e", "f")
 ```
+----
 ### Pass a slice as a parameter to a function, and have that function modify the original slice
   
 Function to modify the original slice, then need to pass a pointer to the slice as  a parameter to a function:
@@ -48,7 +54,7 @@ func myAppend(list *[]string, value string) {
     *list = append(*list, value)
 }
 ```
-
+----
 ### Method receiver - value recevier & pointer recevier
 
 ```
@@ -66,12 +72,12 @@ func(m *MyStruct)PrintMe() {
 }
 
 ```
-
+-----
 ### Slice: Hold the ref to array (pointer)
-
+-----
 ### Type assertion: apply to interface value x.(t) where x is interface expression and T is type
 
-
+-----
 
 
 ### pointer (*) and address-of operator (&)
@@ -111,14 +117,15 @@ func modifyValue(v *int) {
 x := 10
 modifyValue(&x) // Passes 'x' by reference, so 'x' will be modified to 20
 ```
-
+------
 ### Slice where each element is a array of size 2
 
 ```
 pairs  = [][2]int
 ```
+------
 
-14. Access Characters of String in Go
+### Access Characters of String in Go
 
   create and initialize a string
   
@@ -136,13 +143,16 @@ pairs  = [][2]int
   
   `fmt.Printf("%c", name[8])  // z`
 
- 15. Trim spaces
+------
+
+### Trim spaces
 
 ```
 strings.TrimSpace(s)
 ```
+-----
 
-16. For loop on map
+### For loop on map
 
 ```
 for k, v := range m { 
@@ -150,7 +160,8 @@ for k, v := range m {
 
 }
 ```
-
+---------
+---------
 
 # Docker
 
@@ -162,6 +173,8 @@ docker tag old-registry/app:some_tag new-registry/app:some_tag
 docker push new-registry/app:some_tag
 ```
 
+-----
+-----
 # Others
 
 1. OLAP: Online analytical processing
