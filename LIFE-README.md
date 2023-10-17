@@ -38,6 +38,8 @@
 
 >Achivement require secrifice
 
+>The sign of intelligent people is their ability to control their emotion by the application of reason - Maryan Mannes 
+
 > Don't trust your memory. Write stuff down. Have a spedific time to review it. Use calendar, alarm and reminders. DO NOT RELY ON MEMORY - outsource it!!
 
 > “Today is difficult, tomorrow is much more difficult, but the day after tomorrow is beautiful.
