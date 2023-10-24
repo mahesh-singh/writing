@@ -160,6 +160,18 @@ for k, v := range m {
 
 }
 ```
+-----
+
+### Get small case alphabets index in array of 26 length
+
+```
+  arr := [26]string
+//to store a at index 0
+arr['a'-'a'] = "a"
+//to store c at index 2
+arr['c'-'a'] = "c"
+```
+
 ---------
 ---------
 
