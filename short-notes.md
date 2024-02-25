@@ -188,6 +188,9 @@ docker push new-registry/app:some_tag
 
 ### How to get into the docker container via docker-compose 
 ```
+docker-compose run web bash
+
+//--service-ports expose the service ports on the host
 docker-compose run --service-ports web bash
 ```
 
