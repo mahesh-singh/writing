@@ -172,6 +172,19 @@ arr['a'-'a'] = "a"
 arr['c'-'a'] = "c"
 ```
 
+### How to clean up go.mod file by removing the dependency which are unused
+
+```
+go mod tidy
+```
+It also add dependencies which are used but not added into the go.mod file
+
+### What is the role of go.sum
+
+```
+Its ensure module integrity by adding checksum in go.sum file. It is used the check modules while downloading via checksum. It is also used for version pinning  
+```
+
 ---------
 ---------
 
