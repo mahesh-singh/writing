@@ -184,6 +184,14 @@ docker pull old-registry/app:some_tag
 docker tag old-registry/app:some_tag new-registry/app:some_tag
 docker push new-registry/app:some_tag
 ```
+-----
+
+### How to get into the docker container via docker-compose 
+```
+docker-compose run --service-ports web bash
+```
+
+
 
 -----
 -----
