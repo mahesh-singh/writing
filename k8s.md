@@ -7,3 +7,5 @@
 `kubectl config use-context`
 
 `kubectl explain pod.spec.restartPolicy`
+
+Restart policy applies on container within Pod not on the Pod. Pod alwayes deleted and created new.
