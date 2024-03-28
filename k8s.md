@@ -13,3 +13,10 @@ Restart policy applies on container within Pod not on the Pod. Pod alwayes delet
 `kubectl get pods hello-pod -o yaml`
 
 `kubectl describe pod hello-pod`
+
+`kubectk logs <pod>`
+
+`kubectl exec <pod> -- command` example `kubectl exec hello-pod -- curl localhost:8080`
+`kubectl exec -it hello-pod -- sh`
+
+
