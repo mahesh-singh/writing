@@ -22,3 +22,11 @@ Restart policy applies on container within Pod not on the Pod. Pod alwayes delet
 `kubectl exec -it hello-pod -- sh` it interactive
 
 
+`metadata > name` is pod hostname. 
+
+Resource Request: Min values
+Resource Limit: Max values
+
+Multi-container pods: init container, sidecar container
+
+
