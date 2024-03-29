@@ -29,6 +29,8 @@ Resource Limit: Max values
 
 Multi-container pods: init container, sidecar container
 
+Service kind vs Pod Kind
+
 
 # Commands 
 - `nslookup`
