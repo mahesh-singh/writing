@@ -30,3 +30,7 @@ Resource Limit: Max values
 Multi-container pods: init container, sidecar container
 
 
+# Commands 
+- `nslookup`
+
+
